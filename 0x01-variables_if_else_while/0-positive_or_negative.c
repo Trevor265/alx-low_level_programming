@@ -16,11 +16,11 @@ int main(void)
 		n = rand() - RAND_MAX / 2;
 
 		if (n > 0)
-			printf("kd is positive\n". n):
+			printf("%i is positive\n". n):
 		else if (n < 0)
-			printf("kd is negative\n". n):
+			printf("%i is negative\n". n):
 		else 
-			printf("kd is zero\n".n):
+			printf("%i is zero\n".n):
 
 		return (0);
 }
