@@ -1,24 +1,44 @@
-#include "main.h"
+#include "main.h"                                                                                                                    
 
-/**
- *_strcat - concatenates the string pointed to by @str to
- * the end of the string pointed to by @dest
- *@dest: String that will be appended
- *src: String to be concatenated upon
- *
- *Return: returns pointer to @dest
- */
+                                                                                                                                     
 
-char *_strcat(char *dest, char *src)
-{
+/**                                                                                                                                  
 
-int index = 0, dest_len = 0;
+ * strcat - Concatenates the string pointed to by @src, including the terminat                                                       
 
-	while (dest[index++])
-		dest_len++;
+ *          null byte, to the end of the string pointed to by @dest.                                                                 
 
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
+ * @dest: A pointer to the string to be concatenated upon.                                                                           
 
-	return (dest);
+ * @src: The source string to be appended to @dest.                                                                                  
+
+ *                                                                                                                                   
+
+ * Return: A pointer to the destination string @dest.                                                                                
+
+ */                                                                                                                                  
+
+char *strcat(char *dest, const char *src)                                                                                            
+
+{                                                                                                                                    
+
+        int index = 0, dest_len = 0;                                                                                                 
+
+                                                                                                                                     
+
+        while (dest[index++])                                                                                                        
+
+                dest_len++;                                                                                                          
+
+                                                                                                                                     
+
+        for (index = 0; src[index]; index++)                                                                                         
+
+                dest[dest_len++] = src[index];                                                                                       
+
+                                                                                                                                     
+
+        return (dest);                                                                                                               
+
 }
+
