@@ -1,21 +1,14 @@
 #include "main.h"
 /**
-* print_number - prints an integer
-*@n:integer to be printed
-*
-*/
-void print_number(int n)
+ * set_string - sets the value of a pointer to a char
+ *
+ * @s: The pointer to change
+ * @to: The value to change the pointer to
+ *
+ * Return: nothing
+ */
+
+void set_string(char **s, char *to)
 {
-	unsigned int num = n;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		num = -num;
-	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	*s = to;
 }
